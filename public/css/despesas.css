@@ -1,0 +1,138 @@
+.grid-aside-header {
+  grid-area: logo;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #2c5364;
+}
+
+.grid-header {
+  grid-area: header;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  font-size: 3.4rem;
+  color: #132a33;
+  font-weight: 700;
+}
+
+.grid-aside {
+  grid-area: aside;
+  background-color: #2c5364;
+  font-weight: 400;
+
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  border-top: 1px solid white;
+}
+
+.grid-content {
+  grid-area: content;
+}
+
+.grid-footer {
+  grid-area: footer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 10% 1fr 5%;
+  grid-template-areas:
+    "logo header"
+    "aside content"
+    "aside footer";
+  height: 100vh;
+}
+
+.grid-aside-header h1,
+h2 {
+  font-weight: 400;
+  color: #499ebf;
+}
+
+.grid-aside-header span {
+  font-weight: 700;
+  color: #132a33;
+}
+
+.logo {
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid-aside .menu1 {
+  margin-top: 1.4rem;
+}
+
+.grid-aside .menu1,
+.grid-aside .menu2 {
+  padding: 1.4rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.grid-aside a {
+  cursor: pointer;
+  color: white;
+}
+
+.grid-aside a:hover,
+.menu-selected {
+  background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+}
+
+@media (max-width: 1115px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 10% 1fr 5%;
+    grid-template-areas:
+      "aside aside"
+      "header header"
+      "content content"
+      "footer footer";
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .grid-aside {
+    background-color: #2c5364;
+    font-weight: 400;
+  
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  
+    border-top: 1px solid white;
+  }
+
+  .grid-aside .menu1 {
+    margin-top: 0;
+  }
+
+  .grid-header {
+    margin-top: 1.8rem;
+  }
+
+  .grid-aside .menu1, .grid-aside .menu2 {
+    font-size: 1.3rem;
+}
+}

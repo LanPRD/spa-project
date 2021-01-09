@@ -1,0 +1,40 @@
+<head>
+  <link rel="icon" href="../images/logo-icon.png" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/despesas.css" />
+  <link rel="stylesheet" href="../css/form.css" />
+  <link rel="stylesheet" href="../css/database.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+
+<form action="salvar-cadastro" method="post" name="formCadastro">
+  <fieldset>
+    <legend>Cadastro</legend>
+
+    <div class="input-block">
+      <label for="name">Nome</label>
+      <input id="name" name="name" placeholder="Digite o nome..." required />
+    </div>
+
+    <div class="input-block">
+      <label for="obs">Observações</label>
+      <textarea id="obs" name="obs"></textarea>
+    </div>
+
+    <button type="submit" onclick="fetchFunction(event)">Cadastrar</button>
+  </fieldset>
+</form>
+
+<div class="database">
+
+  {{#each dadosSelecionados}}
+  <p>
+    <span name="id">{{this.id}}</span>
+    <span>{{this.name}}</span>
+    <span>OBS: {{this.obs}}</span>
+    <span><img src="../images/red-x.png" alt="{{this.id}}" onclick="deleteUsers(event)"></span>
+  </p>
+  {{/each}}
+
+</div>

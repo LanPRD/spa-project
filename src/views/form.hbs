@@ -1,0 +1,49 @@
+<head>
+  <link rel="icon" href="../images/logo-icon.png" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/despesas.css" />
+  <link rel="stylesheet" href="../css/form.css" />
+  <link rel="stylesheet" href="../css/database.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+
+<form action="salvar-historico" method="post" name="formHistorico">
+  <fieldset>
+    <legend>Dados</legend>
+
+    <div class="input-block">
+      <label for="date">Data</label>
+      <input type="date" id="date" name="date" placeholder="Inserir data" required />
+    </div>
+
+    <div class="input-block">
+      <label for="name">Nome</label>
+      <select name="name" id="name" multiplesize="50" required>
+        <option value="default">Selecione</option>
+        {{#each dadosRelatorio}}
+        <option value="{{this.name}}">{{this.name}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <div class="input-block">
+      <label for="price">Valor</label>
+      <input id="price" name="price" placeholder="0.00" required />
+    </div>
+
+    <div class="input-block">
+      <label for="obs">Observações</label>
+      <textarea id="obs" name="obs"></textarea>
+    </div>
+
+    <div class="options">
+      <input type="radio" name="type" value="dizimo" required /> Dízimo
+      <input type="radio" name="type" value="oferta" /> Oferta
+      <input type="radio" name="type" value="missoes" /> Missões
+      <input type="radio" name="type" value="bazar" /> Bazar
+    </div>
+
+    <button type="submit" onclick="fetchFunction(event)">Arquivar</button>
+  </fieldset>
+</form>

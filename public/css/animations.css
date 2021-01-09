@@ -1,0 +1,40 @@
+@keyframes op {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+.animate-op {
+    animation-name: op;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
+}
+
+h1 {
+    animation-delay: 50ms;
+}
+
+h2 {
+    animation-delay: 100ms;
+}
+
+p {
+    animation-delay: 150ms;
+}
+
+a {
+    animation-delay: 200ms;
+}
+
+.animate {
+    animation-delay: 150ms;
+}
+
+form {
+    animation-delay: 200ms;
+}

@@ -1,0 +1,34 @@
+.database {
+    margin: 0 5.5rem 0 5.5rem;
+    color: #464959;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.database p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.database span:not(:first-of-type) {
+    margin-left: 2.6rem;
+}
+
+.database img {
+    height: 1.3rem;
+    opacity: 0.5;
+}
+
+.database img:hover {
+    height: 1.4rem;
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.database p:not(:first-of-type) {
+    margin-top: 1.3rem;
+}

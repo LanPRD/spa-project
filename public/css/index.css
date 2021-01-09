@@ -1,0 +1,48 @@
+.page-header h1, h2 {
+    font-size: 3.4rem;
+    font-weight: 400;
+    color: #499EBF;
+}
+
+.page-header span {
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: #132A33;
+}
+
+#page-landing {
+    min-height: 100vh;
+    background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    justify-content: center;
+}
+
+.page-header, main {
+    margin: 5rem;
+}
+
+section span {
+    font-weight: 700;
+}
+
+section p, section a.button {
+    margin: 3rem;
+}
+
+section a.button {
+    margin: auto;
+    cursor: pointer;
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: #132A33;
+    text-decoration: none;
+}
+
+section a.button:hover {
+    background: radial-gradient(circle, rgba(44,83,100,1) 0%, rgba(148,187,233,0) 100%);
+    color: #499EBF;
+    border-radius: 20rem;
+}
