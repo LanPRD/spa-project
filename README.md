@@ -20,7 +20,6 @@ The objective of this project was to substantiate my learning about HTML, CSS, J
     - [Express](https://expressjs.com/pt-br/api.html)
     - [HBS](https://handlebarsjs.com/)
     - [SQLite-async](https://www.npmjs.com/package/sqlite-async)
-    - [CSVTOJSON](https://www.npmjs.com/package/sqlite-async)
 
 <br>
 
