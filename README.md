@@ -1,5 +1,7 @@
 # 🚀 SPA Project / Node.js
 
+<img src="public/images/spaProject.gif">
+
 ## 📖 About
 
 The objective of this project was to substantiate my learning about HTML, CSS, JavaScript and NodeJS.
@@ -36,6 +38,8 @@ $ npm install
 
 $ npm start
 ```
+
+If after the npm install command an error occurs, delete the line "sqlite-async": "^ 1.1.1" from the package.json file and run npm install again. After that, execute the command npm i sqlite-async@1.1.0
 
 <br>
 
