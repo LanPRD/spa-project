@@ -27,4 +27,16 @@ The objective of this project was to substantiate my learning about HTML, CSS, J
 
 <br>
 
+## 📁 How to download the project
+
+```bash
+$ git clone https://github.com/LanPRD/spa-project
+
+$ npm install
+
+$ npm start
+```
+
+<br>
+
 <h6 align="center" font-size="11">Developed by <strong>Allan Prado</strong></h6>
